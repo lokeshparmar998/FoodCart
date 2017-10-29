@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -9,7 +12,7 @@
  * @author lokii
  */
 public class food extends javax.swing.JFrame {
-    static double sum=0;
+    static double sum=0,customsum=0;
     int flag1=0,flag2=0,flag3=0,flag4=0,flag5=0;
 
     /**
@@ -901,6 +904,11 @@ public class food extends javax.swing.JFrame {
         jButton5.setFont(new java.awt.Font("Segoe Script", 3, 24)); // NOI18N
         jButton5.setForeground(new java.awt.Color(153, 153, 153));
         jButton5.setText("Finish");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -1447,129 +1455,205 @@ public class food extends javax.swing.JFrame {
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
         if(flag1==1)
             jCheckBox1.setSelected(false);
-        else flag1=1;
+        else 
+        {
+            flag1=1;
+            customsum=customsum+20;
+        }
     }//GEN-LAST:event_jCheckBox1ActionPerformed
 
     private void jCheckBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox3ActionPerformed
          if(flag1==1)
             jCheckBox3.setSelected(false);
-        else flag1=1;
+        else {
+             flag1=1;
+             customsum=customsum+25.5;
+         }
     }//GEN-LAST:event_jCheckBox3ActionPerformed
 
     private void jCheckBox18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox18ActionPerformed
         if(flag4==1)
             jCheckBox18.setSelected(false);
-        else flag4=1;
+        else 
+        {
+            customsum=customsum+25;
+            flag4=1;
+        }
     }//GEN-LAST:event_jCheckBox18ActionPerformed
 
     private void jCheckBox19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox19ActionPerformed
         if(flag5==1)
             jCheckBox19.setSelected(false);
-        else flag5=1;
+        else {
+            customsum=customsum+10;
+            flag5=1;
+        }
     }//GEN-LAST:event_jCheckBox19ActionPerformed
 
     private void jCheckBox22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox22ActionPerformed
         if(flag5==1)
             jCheckBox22.setSelected(false);
-        else flag5=1;
+        else {
+            customsum=customsum+14;
+            flag5=1;
+        }
     }//GEN-LAST:event_jCheckBox22ActionPerformed
 
     private void jCheckBox21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox21ActionPerformed
        if(flag5==1)
             jCheckBox21.setSelected(false);
-        else flag5=1;
+        else {
+           customsum=customsum+15;
+           flag5=1;
+       }
     }//GEN-LAST:event_jCheckBox21ActionPerformed
 
     private void jCheckBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox2ActionPerformed
          if(flag1==1)
             jCheckBox2.setSelected(false);
-        else flag1=1;
+        else {
+             flag1=1;
+             customsum=customsum+10;
+         }
     }//GEN-LAST:event_jCheckBox2ActionPerformed
 
     private void jCheckBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox4ActionPerformed
         if(flag2==1)
             jCheckBox4.setSelected(false);
-        else flag2=1;
+        else {
+            flag2=1;
+            customsum=customsum+13;
+        }
         
     }//GEN-LAST:event_jCheckBox4ActionPerformed
 
     private void jCheckBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox5ActionPerformed
         if(flag2==1)
             jCheckBox5.setSelected(false);
-        else flag2=1;
+        else {
+            flag2=1;
+            customsum=customsum+10;
+        }
     }//GEN-LAST:event_jCheckBox5ActionPerformed
 
     private void jCheckBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox6ActionPerformed
         if(flag2==1)
             jCheckBox6.setSelected(false);
-        else flag2=1;
+        else {
+            flag2=1;
+            customsum=customsum+15;
+        }
     }//GEN-LAST:event_jCheckBox6ActionPerformed
 
     private void jCheckBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox7ActionPerformed
         if(flag2==1)
             jCheckBox7.setSelected(false);
-        else flag2=1;
+        else {
+            flag2=1;
+            customsum=customsum+20;
+        }
     }//GEN-LAST:event_jCheckBox7ActionPerformed
 
     private void jCheckBox11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox11ActionPerformed
         if(flag3==1)
             jCheckBox11.setSelected(false);
-        else flag3=1;
+        else {
+            flag3=1;
+            customsum=customsum+30;
+        }
     }//GEN-LAST:event_jCheckBox11ActionPerformed
 
     private void jCheckBox12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox12ActionPerformed
         if(flag3==1)
             jCheckBox12.setSelected(false);
-        else flag3=1;
+        else {
+            flag3=1;
+            customsum=customsum+6;
+        }
     }//GEN-LAST:event_jCheckBox12ActionPerformed
 
     private void jCheckBox13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox13ActionPerformed
          if(flag3==1)
             jCheckBox13.setSelected(false);
-        else flag3=1;
+        else {
+             flag3=1;
+             customsum=customsum+50;
+         }
     }//GEN-LAST:event_jCheckBox13ActionPerformed
 
     private void jCheckBox14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox14ActionPerformed
         if(flag3==1)
             jCheckBox14.setSelected(false);
-        else flag3=1;
+        else {
+            flag3=1;
+            customsum=customsum+30;
+        }
     }//GEN-LAST:event_jCheckBox14ActionPerformed
 
     private void jCheckBox9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox9ActionPerformed
         if(flag4==1)
             jCheckBox9.setSelected(false);
-        else flag4=1;
+        else {
+            flag4=1;
+            customsum=customsum+10;
+        }
     }//GEN-LAST:event_jCheckBox9ActionPerformed
 
     private void jCheckBox10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox10ActionPerformed
          if(flag4==1)
             jCheckBox10.setSelected(false);
-        else flag4=1;
+        else {
+             customsum=customsum+5;
+             flag4=1;
+         }
     }//GEN-LAST:event_jCheckBox10ActionPerformed
 
     private void jCheckBox15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox15ActionPerformed
         if(flag4==1)
             jCheckBox15.setSelected(false);
-        else flag4=1;
+        else {
+            customsum=customsum+20;
+            flag4=1;
+        }
     }//GEN-LAST:event_jCheckBox15ActionPerformed
 
     private void jCheckBox16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox16ActionPerformed
          if(flag4==1)
             jCheckBox16.setSelected(false);
-        else flag4=1;
+        else {
+             customsum=customsum+15;
+             flag4=1;
+         }
     }//GEN-LAST:event_jCheckBox16ActionPerformed
 
     private void jCheckBox17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox17ActionPerformed
          if(flag4==1)
             jCheckBox17.setSelected(false);
-        else flag4=1;
+        else {
+             customsum=customsum+12;
+             flag4=1;
+         }
     }//GEN-LAST:event_jCheckBox17ActionPerformed
 
     private void jCheckBox20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox20ActionPerformed
         if(flag5==1)
             jCheckBox20.setSelected(false);
-        else flag5=1;
+        else {
+            customsum=customsum+13;
+            flag5=1;
+        }
     }//GEN-LAST:event_jCheckBox20ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+       if(flag1+flag2+flag3+flag4+flag5==5)
+       {
+           JOptionPane.showMessageDialog(null,"Your order has been register");
+           
+       }
+       else
+           JOptionPane.showMessageDialog(null,"You forgot one step");
+           
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
